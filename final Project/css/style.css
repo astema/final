@@ -1,0 +1,504 @@
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Playfair+Display&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*-----------------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap");
+
+body {
+  background: #3b322d;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+}
+.content {
+  flex: 1 1 auto;
+}
+header {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1180px;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  margin-right: 19px;
+}
+.header-menu__list {
+  display: flex;
+  align-items: center;
+}
+.header-menu__link {
+  margin-right: 70px;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 135%;
+  color: #efe7e2;
+}
+.header-menu__link:hover {
+  color: rgb(255, 110, 64);
+  transition: all 0.3s ease 0s;
+  font-weight: bold;
+}
+.header-contacts {
+  display: flex;
+  align-items: center;
+}
+.header-contacts__item {
+  display: flex;
+  align-items: center;
+  margin-right: 42px;
+}
+.header-contacts__item:last-child {
+  margin-right: 0;
+}
+.header-contacts__item img {
+  max-width: 36px;
+  max-height: 36px;
+  margin-left: 15px;
+}
+.header-contects-item__text {
+  display: flex;
+  flex-direction: column;
+}
+.header-contacts-adress__text {
+  text-align: right;
+  max-width: 90px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: #efe7e2;
+}
+.header-contacts__number {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 152%;
+  color: #ffffff;
+}
+.header-contacts__number:hover {
+  color: #fff;
+}
+.header-contacts-number__text {
+  text-align: right;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  color: #efe7e2;
+}
+
+/*===========================================================================*/
+.swiper {
+  max-width: 1300px;
+  margin: 0 auto;
+  height: 700px;
+}
+.swiper-wrapper {
+}
+.swiper-pagination {
+}
+.swiper-button-prev {
+  color: white !important;
+}
+.swiper-button-next {
+  color: white !important;
+}
+
+.swiper-slide {
+  position: relative;
+  display: flex;
+}
+.slide1 {
+  background-image: url("/img/bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide1-top__row {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.slide1-title {
+  margin-left: 122px;
+  margin-right: 172px;
+  max-width: 620px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 110%;
+  color: #ffffff;
+}
+
+.slide1-subtitle {
+  margin-top: 25px;
+  margin-bottom: 29px;
+  border: 1px solid #efe7e2;
+  padding: 10px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1em;
+
+  /* neutral/1 */
+
+  color: #ffffff;
+}
+.slide1-text {
+  max-width: 270px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #efe7e2;
+}
+.slide1-btn {
+  position: absolute;
+  bottom: 60px;
+  left: 122px;
+  width: 194px;
+  height: 68px;
+  background: #ff6e40;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 152%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.slide1-btn:hover {
+  color: #fff;
+}
+/*=======================================*/
+.slide2 {
+  background-image: url("/img/bg2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide2-top__row {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+}
+.slide2-title {
+  margin-left: 122px;
+  margin-right: 172px;
+  max-width: 620px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 70px;
+  line-height: 110%;
+  color: #ffffff;
+}
+
+.slide2-subtitle {
+  margin-top: 25px;
+  margin-bottom: 29px;
+  border: 1px solid #efe7e2;
+  padding: 10px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1em;
+
+  /* neutral/1 */
+
+  color: #ffffff;
+}
+.slide2-text {
+  max-width: 270px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  /* or 27px */
+
+  color: #efe7e2;
+}
+.slide2-btn {
+  position: absolute;
+  bottom: 60px;
+  left: 122px;
+  width: 194px;
+  height: 68px;
+  background: #ff6e40;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 152%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+.slide2-btn:hover {
+  color: #fff;
+}
+
+/*=========================================*/
+.testimonials {
+  padding-top: 50px;
+}
+.title {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+  /* identical to box height, or 60px */
+
+  text-align: center;
+
+  /* neutral/1 */
+
+  color: #ffffff;
+}
+.subtitle {
+  margin-top: 24px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  /* or 24px */
+
+  text-align: center;
+
+  color: #efe7e2;
+}
+.posts {
+margin-top: 60px;
+}
+.posts-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.post {
+  margin-right: 20px;
+  margin-top: 30px;
+  max-width: 280px;
+}
+.post:last-child {
+  margin-right: 0px;
+}
+.post-image {
+  
+}
+.post-info {
+}
+.post-info__name {
+  margin-top: 24px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  display: flex;
+  align-items: flex-end;
+
+  /* neutral/1 */
+
+  color: #ffffff;
+}
+.post-info__text {
+  margin-top: 24px;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+  /* neutral/1 */
+
+  color: #ffffff;
+}
+.post-info__btn {
+  margin-top: 24px;
+  background: #ff6e40;
+  padding: 10px;
+  border-radius: 50px;
+}
+.post-info__btn a {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135%;
+  /* identical to box height, or 19px */
+  color: black;
+}
+
+.post-info__btn:hover {
+  background: white;
+  transition: all 0.3s ease 0s;
+  color: #ff6e40;
+ }
+
+/*====================================*/
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 200px;
+  background-color: black;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.footer-title {
+  font-size: 30px;
+  color: white;
+}
+.footer-menu {
+  list-style-type: none;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+}
+.footer-menu li {
+  margin-right: 40px;
+  text-decoration: none;
+}
+.footer-menu li a {
+  color: white;
+  font-size: 20px;
+}
+.footer-coop {
+  margin-top: 30px;
+  color: white;
+}
